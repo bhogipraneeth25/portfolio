@@ -266,3 +266,74 @@ footer {
     transform: scale(1.2);
     color: #ffffff;
 }
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* HERO SECTION */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* EDUCATION */
+    .edu-row {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .edu-year {
+        font-size: 2rem;
+    }
+
+    /* PROJECTS */
+    .project-card {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .project-image img {
+        height: 200px;
+    }
+
+    /* SKILLS */
+    .skill-card {
+        padding: 20px;
+    }
+
+    /* CONTACT */
+    .contact-card {
+        width: 95%;
+        padding: 25px;
+    }
+}
+
+
