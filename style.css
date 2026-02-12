@@ -1,0 +1,268 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f172a;   /* Dark background */
+    color: #e2e8f0;
+}
+
+section {
+    padding: 90px 20px;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #0b1220;
+    box-shadow: 0 10px 30px rgba(0,255,255,0.08);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #00f5ff;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00f5ff;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #0f172a;
+    color: white;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.hero-text span {
+    color: #00f5ff;
+}
+
+.hero-text p {
+    margin-top: 15px;
+    color: #94a3b8;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.btn, .btn-outline {
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn {
+    background: #00f5ff;
+    color: #0f172a;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid #00f5ff;
+    color: #00f5ff;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: #00f5ff;
+    color: #0f172a;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00f5ff;
+    box-shadow: 
+        0 0 20px rgba(0,255,255,0.6),
+        0 0 60px rgba(0,255,255,0.4);
+    transition: 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+#education {
+    background: #0b1220;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00f5ff;
+    margin-bottom: 60px;
+}
+
+.edu-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: #111827;
+    padding: 40px 50px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0,255,255,0.08);
+}
+
+.edu-year {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #64748b;
+}
+
+.skill-card {
+    background: #111827;
+    color: #00f5ff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 8px 25px rgba(0,255,255,0.08);
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,255,255,0.25);
+}
+
+/* =====================
+   PROJECTS
+===================== */
+
+.projects-grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    justify-content: center;
+    gap: 35px;
+}
+
+.project-card {
+    width: 1000px;
+    background: #111827;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,255,255,0.08);
+    transition: 0.3s ease;
+
+    margin: 40px auto;   /* 🔥 This centers the card */
+}
+
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,255,255,0.25);
+}
+
+.project-image img {
+    width: 100%;
+    height: 300px;            /* Medium image */
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 18px;
+    color: #e9ebee;
+}
+
+
+/* =====================
+   CONTACT
+===================== */
+
+.contact-card {
+    max-width: 500px;
+    margin: auto;
+    padding: 35px;
+    background: #111827;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,255,255,0.1);
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b1220;
+    color: #94a3b8;
+}
+
+.contact-item i {
+    font-size: 1.2rem;
+    color: #00f5ff;
+    transition: 0.3s;
+}
+
+.contact-item:hover i {
+    transform: scale(1.2);
+    color: #ffffff;
+}
